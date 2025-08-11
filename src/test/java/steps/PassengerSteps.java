@@ -81,4 +81,9 @@ public class PassengerSteps {
     public void delete_passenger(int id) {
         response = given().spec(ApiConfig.REQUEST).auth().oauth2(token).when().delete("/deletePassengerById/" + id).then().extract().response();
     }
+    @When("I fetch passenger by id {string}")
+    public void i_fetch_passenger_by_id(String id) {
+        // Write code here that turns the phrase above into concrete actions
+    	response = given().spec(ApiConfig.REQUEST).auth().oauth2(token).when().get("/viewPassengerById/"+id).then().extract().response();
+    }
 }
