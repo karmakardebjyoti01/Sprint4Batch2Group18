@@ -16,6 +16,9 @@ Feature: Passenger Service API
   Scenario: View passenger by name and mobile
     When I fetch passenger by name "Rakesh" and mobile "1234567890"
     Then the response status should be 200
+  Scenario: View passenger by id
+    When I fetch passenger by id "1"
+    Then the response status should be 200
 
   Scenario: Delete passenger by id
     When I delete passenger with id 1
