@@ -9,6 +9,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class PassengerSteps {
@@ -78,7 +79,10 @@ public class PassengerSteps {
 
     @Then("the list should contain passenger id {string}")
     public void list_should_contain_id(String id) {
-        assertThat(response.asString(), containsString(String.valueOf(Integer.parseInt(id))));
+    	
+//        assertThat(response.asString(), containsString(String.valueOf(Integer.parseInt(id))));
+    	List<Integer> passengerIds = response.jsonPath().getList("passengerId");
+        assertThat(passengerIds, hasItem(Integer.parseInt(id)));
     }
 
     @When("I fetch passenger by name {string} and mobile {string}")
