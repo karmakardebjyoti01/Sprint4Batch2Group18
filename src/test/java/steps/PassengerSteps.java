@@ -20,8 +20,9 @@ public class PassengerSteps {
         token = AuthUtil.getAccessToken();
     }
 
-    @When("I add passenger with id {int} name {string} mobile {string} gender {string} aadhaar {string} address {string}")
-    public void addPassenger(int id, String name, String mobile, String gender, String aadhaar, String address) {
+    @When("I add passenger with id {string} name {string} mobile {string} gender {string} aadhaar {string} address {string}")
+    public void addPassenger(String idVal, String name, String mobile, String gender, String aadhaar, String address) {
+    	int id=Integer.parseInt(idVal);
         Map<String, String> form = new HashMap<>();
         form.put("passengerId", String.valueOf(id));
         form.put("passengerName", name);
@@ -40,13 +41,22 @@ public class PassengerSteps {
             .extract().response();
     }
 
-    @Then("the response status should be {int}")
-    public void response_status_should_be(int status) {
-        response.then().statusCode(status);
+    @Then("the response status should be {string}")
+    public void response_status_should_be(String status) {
+        response.then().statusCode(Integer.parseInt(status));
     }
+//    @Then("the response status should be {String}")
+//    public void response_status_should_be_String(String status) {
+//        response.then().statusCode(Integer.parseInt(status));
+//    }
+//    @Then("the response status should be {string}")
+//    public void the_response_status_should_be(String status) {
+//        // Write code here that turns the phrase above into concrete actions
+//    	response.then().statusCode(Integer.parseInt(status));
+//    }
 
-    @Then("the passenger with id {int} should have name {string}")
-    public void passenger_should_have_name(int id, String expectedName) {
+    @Then("the passenger with id {string} should have name {string}")
+    public void passenger_should_have_name(String id, String expectedName) {
         // fetch by id and assert name
         Response r = given()
             .spec(ApiConfig.REQUEST)
@@ -66,9 +76,9 @@ public class PassengerSteps {
         response = given().spec(ApiConfig.REQUEST).auth().oauth2(token).when().get("/viewPassengerList").then().extract().response();
     }
 
-    @Then("the list should contain passenger id {int}")
-    public void list_should_contain_id(int id) {
-        assertThat(response.asString(), containsString(String.valueOf(id)));
+    @Then("the list should contain passenger id {string}")
+    public void list_should_contain_id(String id) {
+        assertThat(response.asString(), containsString(String.valueOf(Integer.parseInt(id))));
     }
 
     @When("I fetch passenger by name {string} and mobile {string}")
@@ -77,8 +87,8 @@ public class PassengerSteps {
             .get("/viewPassengerByNameMobile/" + name + "/" + mobile).then().extract().response();
     }
 
-    @When("I delete passenger with id {int}")
-    public void delete_passenger(int id) {
+    @When("I delete passenger with id {string}")
+    public void delete_passenger(String id) {
         response = given().spec(ApiConfig.REQUEST).auth().oauth2(token).when().delete("/deletePassengerById/" + id).then().extract().response();
     }
     @When("I fetch passenger by id {string}")

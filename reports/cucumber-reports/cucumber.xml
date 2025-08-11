@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="20.264" tests="41" skipped="0" failures="24" errors="0" timestamp="2025-08-11T06:44:31.973169600Z">
+<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.1" time="2.672">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:67)
+	at ✽.the passenger with id "9" should have name "Matilda"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I add passenger with id "9" name "Matilda" mobile "9898765654" gender "Female" aadhaar "1239876765Y" address "Chennai".passed
+Then the response status should be "200"....................................passed
+And the passenger with id "9" should have name "Matilda"....................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.2" time="0.599">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:67)
+	at ✽.the passenger with id "10" should have name "Natilda"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I add passenger with id "10" name "Natilda" mobile "9898765655" gender "Male" aadhaar "1239876766B" address "Kolkata".passed
+Then the response status should be "200"....................................passed
+And the passenger with id "10" should have name "Natilda"...................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.3" time="0.552">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:67)
+	at ✽.the passenger with id "11" should have name "Rick"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I add passenger with id "11" name "Rick" mobile "9898765656" gender "Female" aadhaar "1239876767C" address "Delhi".passed
+Then the response status should be "200"....................................passed
+And the passenger with id "11" should have name "Rick"......................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.4" time="0.536">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:67)
+	at ✽.the passenger with id "12" should have name "Jhon"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I add passenger with id "12" name "Jhon" mobile "9898765657" gender "Male" aadhaar "1239876768A" address "Pune".passed
+Then the response status should be "200"....................................passed
+And the passenger with id "12" should have name "Jhon"......................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.5" time="0.564">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:67)
+	at ✽.the passenger with id "13" should have name "Rahul"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I add passenger with id "13" name "Rahul" mobile "9898765658" gender "Female" aadhaar "1239876769B" address "Chennai".passed
+Then the response status should be "200"....................................passed
+And the passenger with id "13" should have name "Rahul".....................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.6" time="0.553">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:67)
+	at ✽.the passenger with id "14" should have name "Nick"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I add passenger with id "14" name "Nick" mobile "9898765659" gender "Male" aadhaar "1239876770C" address "Kolkata".passed
+Then the response status should be "200"....................................passed
+And the passenger with id "14" should have name "Nick"......................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.7" time="0.562">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:67)
+	at ✽.the passenger with id "15" should have name "Joe"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I add passenger with id "15" name "Joe" mobile "9898765660" gender "Female" aadhaar "1239876777A" address "Delhi".passed
+Then the response status should be "200"....................................passed
+And the passenger with id "15" should have name "Joe".......................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.1: View passenger list and verify contains id &quot;9&quot;" time="0.4">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger list.................................................passed
+Then the response status should be "200"....................................passed
+And the list should contain passenger id "9"................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.2: View passenger list and verify contains id &quot;10&quot;" time="0.417">
+<failure type="java.lang.AssertionError" message="
+Expected: a string containing &quot;10&quot;
+     but: was &quot;[{&quot;passengerId&quot;:1,&quot;passengerName&quot;:&quot;Rakesh&quot;,&quot;passengerMobile&quot;:&quot;1234567890&quot;,&quot;passengerGender&quot;:&quot;Male&quot;,&quot;passengerAadhaarNumber&quot;:&quot;123400001234&quot;,&quot;passengerAddress&quot;:&quot;Chennai&quot;},{&quot;passengerId&quot;:2,&quot;passengerName&quot;:&quot;Priya&quot;,&quot;passengerMobile&quot;:&quot;1245678231&quot;,&quot;passengerGender&quot;:&quot;Female&quot;,&quot;passengerAadhaarNumber&quot;:&quot;231400000000&quot;,&quot;passengerAddress&quot;:&quot;Coimbatore&quot;}]&quot;">
+<![CDATA[java.lang.AssertionError: 
+Expected: a string containing "10"
+     but: was "[{"passengerId":1,"passengerName":"Rakesh","passengerMobile":"1234567890","passengerGender":"Male","passengerAadhaarNumber":"123400001234","passengerAddress":"Chennai"},{"passengerId":2,"passengerName":"Priya","passengerMobile":"1245678231","passengerGender":"Female","passengerAadhaarNumber":"231400000000","passengerAddress":"Coimbatore"}]"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at steps.PassengerSteps.list_should_contain_id(PassengerSteps.java:81)
+	at ✽.the list should contain passenger id "10"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:28)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger list.................................................passed
+Then the response status should be "200"....................................passed
+And the list should contain passenger id "10"...............................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.3: View passenger list and verify contains id &quot;11&quot;" time="0.407">
+<failure type="java.lang.AssertionError" message="
+Expected: a string containing &quot;11&quot;
+     but: was &quot;[{&quot;passengerId&quot;:1,&quot;passengerName&quot;:&quot;Rakesh&quot;,&quot;passengerMobile&quot;:&quot;1234567890&quot;,&quot;passengerGender&quot;:&quot;Male&quot;,&quot;passengerAadhaarNumber&quot;:&quot;123400001234&quot;,&quot;passengerAddress&quot;:&quot;Chennai&quot;},{&quot;passengerId&quot;:2,&quot;passengerName&quot;:&quot;Priya&quot;,&quot;passengerMobile&quot;:&quot;1245678231&quot;,&quot;passengerGender&quot;:&quot;Female&quot;,&quot;passengerAadhaarNumber&quot;:&quot;231400000000&quot;,&quot;passengerAddress&quot;:&quot;Coimbatore&quot;}]&quot;">
+<![CDATA[java.lang.AssertionError: 
+Expected: a string containing "11"
+     but: was "[{"passengerId":1,"passengerName":"Rakesh","passengerMobile":"1234567890","passengerGender":"Male","passengerAadhaarNumber":"123400001234","passengerAddress":"Chennai"},{"passengerId":2,"passengerName":"Priya","passengerMobile":"1245678231","passengerGender":"Female","passengerAadhaarNumber":"231400000000","passengerAddress":"Coimbatore"}]"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at steps.PassengerSteps.list_should_contain_id(PassengerSteps.java:81)
+	at ✽.the list should contain passenger id "11"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:28)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger list.................................................passed
+Then the response status should be "200"....................................passed
+And the list should contain passenger id "11"...............................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.4: View passenger list and verify contains id &quot;12&quot;" time="0.424">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger list.................................................passed
+Then the response status should be "200"....................................passed
+And the list should contain passenger id "12"...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.5: View passenger list and verify contains id &quot;13&quot;" time="0.412">
+<failure type="java.lang.AssertionError" message="
+Expected: a string containing &quot;13&quot;
+     but: was &quot;[{&quot;passengerId&quot;:1,&quot;passengerName&quot;:&quot;Rakesh&quot;,&quot;passengerMobile&quot;:&quot;1234567890&quot;,&quot;passengerGender&quot;:&quot;Male&quot;,&quot;passengerAadhaarNumber&quot;:&quot;123400001234&quot;,&quot;passengerAddress&quot;:&quot;Chennai&quot;},{&quot;passengerId&quot;:2,&quot;passengerName&quot;:&quot;Priya&quot;,&quot;passengerMobile&quot;:&quot;1245678231&quot;,&quot;passengerGender&quot;:&quot;Female&quot;,&quot;passengerAadhaarNumber&quot;:&quot;231400000000&quot;,&quot;passengerAddress&quot;:&quot;Coimbatore&quot;}]&quot;">
+<![CDATA[java.lang.AssertionError: 
+Expected: a string containing "13"
+     but: was "[{"passengerId":1,"passengerName":"Rakesh","passengerMobile":"1234567890","passengerGender":"Male","passengerAadhaarNumber":"123400001234","passengerAddress":"Chennai"},{"passengerId":2,"passengerName":"Priya","passengerMobile":"1245678231","passengerGender":"Female","passengerAadhaarNumber":"231400000000","passengerAddress":"Coimbatore"}]"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at steps.PassengerSteps.list_should_contain_id(PassengerSteps.java:81)
+	at ✽.the list should contain passenger id "13"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:28)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger list.................................................passed
+Then the response status should be "200"....................................passed
+And the list should contain passenger id "13"...............................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.6: View passenger list and verify contains id &quot;14&quot;" time="0.388">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger list.................................................passed
+Then the response status should be "200"....................................passed
+And the list should contain passenger id "14"...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.7: View passenger list and verify contains id &quot;15&quot;" time="0.43">
+<failure type="java.lang.AssertionError" message="
+Expected: a string containing &quot;15&quot;
+     but: was &quot;[{&quot;passengerId&quot;:1,&quot;passengerName&quot;:&quot;Rakesh&quot;,&quot;passengerMobile&quot;:&quot;1234567890&quot;,&quot;passengerGender&quot;:&quot;Male&quot;,&quot;passengerAadhaarNumber&quot;:&quot;123400001234&quot;,&quot;passengerAddress&quot;:&quot;Chennai&quot;},{&quot;passengerId&quot;:2,&quot;passengerName&quot;:&quot;Priya&quot;,&quot;passengerMobile&quot;:&quot;1245678231&quot;,&quot;passengerGender&quot;:&quot;Female&quot;,&quot;passengerAadhaarNumber&quot;:&quot;231400000000&quot;,&quot;passengerAddress&quot;:&quot;Coimbatore&quot;}]&quot;">
+<![CDATA[java.lang.AssertionError: 
+Expected: a string containing "15"
+     but: was "[{"passengerId":1,"passengerName":"Rakesh","passengerMobile":"1234567890","passengerGender":"Male","passengerAadhaarNumber":"123400001234","passengerAddress":"Chennai"},{"passengerId":2,"passengerName":"Priya","passengerMobile":"1245678231","passengerGender":"Female","passengerAadhaarNumber":"231400000000","passengerAddress":"Coimbatore"}]"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at steps.PassengerSteps.list_should_contain_id(PassengerSteps.java:81)
+	at ✽.the list should contain passenger id "15"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:28)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger list.................................................passed
+Then the response status should be "200"....................................passed
+And the list should contain passenger id "15"...............................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.1" time="0.413">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by name "Rakesh" and mobile "1234567890".............passed
+Then the response status should be "200"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.2" time="0.417">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by name "Priya" and mobile "1245678231"..............passed
+Then the response status should be "200"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.3" time="0.403">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:44)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by name "Rakesh" and mobile "1256788572".............passed
+Then the response status should be "200"....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.4" time="0.419">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:44)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by name "Priya" and mobile "1267898913"..............passed
+Then the response status should be "200"....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.5" time="0.464">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by name "Lee" and mobile "9898765658"................passed
+Then the response status should be "204"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.6" time="0.408">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <404> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
+	at ✽.the response status should be "404"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:44)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by name "Henry" and mobile "9898765659"..............passed
+Then the response status should be "404"....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.7" time="0.399">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
+	at ✽.the response status should be "400"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:44)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by name "Harry" and mobile "9898765660"..............passed
+Then the response status should be "400"....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.8" time="0.414">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
+	at ✽.the response status should be "400"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:44)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by name "Natasha" and mobile "9898765661"............passed
+Then the response status should be "400"....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.9" time="0.41">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
+	at ✽.the response status should be "400"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:44)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by name "Angela" and mobile "9898765662".............passed
+Then the response status should be "400"....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by id - #1.1" time="0.432">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by id "1"............................................passed
+Then the response status should be "200"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by id - #1.2" time="0.419">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by id "2"............................................passed
+Then the response status should be "200"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by id - #1.3" time="0.4">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:61)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by id "9"............................................passed
+Then the response status should be "200"....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by id - #1.4" time="0.402">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:61)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by id "10"...........................................passed
+Then the response status should be "200"....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by id - #1.5" time="0.407">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:61)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by id "11"...........................................passed
+Then the response status should be "200"....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by id - #1.6" time="0.416">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:61)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by id "12"...........................................passed
+Then the response status should be "200"....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by id - #1.7" time="0.419">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:61)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by id "13"...........................................passed
+Then the response status should be "200"....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by id - #1.8" time="0.447">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:61)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by id "14"...........................................passed
+Then the response status should be "200"....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by id - #1.9" time="0.383">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:61)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by id "15"...........................................passed
+Then the response status should be "200"....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.1" time="0.393">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I delete passenger with id "1".........................................passed
+Then the response status should be "200"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.2" time="0.403">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I delete passenger with id "12"........................................passed
+Then the response status should be "200"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.3" time="0.407">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I delete passenger with id "9".........................................passed
+Then the response status should be "200"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.4" time="0.411">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I delete passenger with id "10"........................................passed
+Then the response status should be "200"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.5" time="0.421">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I delete passenger with id "11"........................................passed
+Then the response status should be "200"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.6" time="0.441">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I delete passenger with id "12"........................................passed
+Then the response status should be "200"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.7" time="0.405">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I delete passenger with id "13"........................................passed
+Then the response status should be "200"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.8" time="0.407">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I delete passenger with id "14"........................................passed
+Then the response status should be "200"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.9" time="0.392">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I delete passenger with id "15"........................................passed
+Then the response status should be "200"....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
