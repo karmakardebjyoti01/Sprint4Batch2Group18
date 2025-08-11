@@ -28,7 +28,9 @@ Feature: Passenger Service API
     And the list should contain passenger id "<id>"
     
     Examples:
-    |id    | status   |       
+    |id    | status   |     
+    |1     |200|
+    |2     |200| 
     | 9     |200|
 	|10		|200|
 	|11		|200|
@@ -49,11 +51,11 @@ Feature: Passenger Service API
 		| Priya	|1245678231 | 200 | 
 		|Rakesh	|1256788572 | 200 | 
 		|Priya	|1267898913 |  200| 
-		|Lee	|9898765658 | 204 | 
+		|Lee	|9898765658 | 404 | 
 		|Henry	|9898765659 | 404 | 
-		|Harry	|9898765660 | 400 | 
-		|Natasha|	9898765661 | 400 | 
-		|Angela|	9898765662 | 400 | 
+		|Harry	|9898765660 | 404 | 
+		|Natasha|	9898765661 | 404 | 
+		|Angela|	9898765662 | 404 | 
 
 	
   Scenario Outline: View passenger by id
@@ -77,11 +79,11 @@ Feature: Passenger Service API
     Examples:
 	 |id    | status   | 
 	 | 1	|200|
-	 | 12	|200|      
-    | 9     |200|
-	|10		|200|
-	|11		|200|
-   	|12		|200|
-   	| 13	|200|
-   	| 14	|200|
-   	| 15	|200|
+	 | 2	|200|      
+     | 9    |200|
+	 |10	|200|
+	 |11	|200|
+   	 |12	|200|
+   	 | 13	|200|
+   	 | 14	|200|
+   	 | 15	|200|

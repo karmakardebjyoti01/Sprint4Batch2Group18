@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="20.264" tests="41" skipped="0" failures="24" errors="0" timestamp="2025-08-11T06:44:31.973169600Z">
-<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.1" time="2.672">
+<testsuite name="Cucumber" time="20.816" tests="43" skipped="0" failures="28" errors="0" timestamp="2025-08-11T07:09:37.631169100Z">
+<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.1" time="2.473">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;204&gt;.
 ">
@@ -29,7 +29,7 @@ Expected status code <200> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:67)
+	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:68)
 	at ✽.the passenger with id "9" should have name "Matilda"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:9)
 ]]>
 </failure>
@@ -40,7 +40,7 @@ Then the response status should be "200"....................................pass
 And the passenger with id "9" should have name "Matilda"....................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.2" time="0.599">
+<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.2" time="0.562">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;204&gt;.
 ">
@@ -67,7 +67,7 @@ Expected status code <200> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:67)
+	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:68)
 	at ✽.the passenger with id "10" should have name "Natilda"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:9)
 ]]>
 </failure>
@@ -78,7 +78,7 @@ Then the response status should be "200"....................................pass
 And the passenger with id "10" should have name "Natilda"...................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.3" time="0.552">
+<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.3" time="0.545">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;204&gt;.
 ">
@@ -105,7 +105,7 @@ Expected status code <200> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:67)
+	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:68)
 	at ✽.the passenger with id "11" should have name "Rick"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:9)
 ]]>
 </failure>
@@ -116,7 +116,7 @@ Then the response status should be "200"....................................pass
 And the passenger with id "11" should have name "Rick"......................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.4" time="0.536">
+<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.4" time="0.591">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;204&gt;.
 ">
@@ -143,7 +143,7 @@ Expected status code <200> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:67)
+	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:68)
 	at ✽.the passenger with id "12" should have name "Jhon"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:9)
 ]]>
 </failure>
@@ -154,7 +154,7 @@ Then the response status should be "200"....................................pass
 And the passenger with id "12" should have name "Jhon"......................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.5" time="0.564">
+<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.5" time="0.573">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;204&gt;.
 ">
@@ -181,7 +181,7 @@ Expected status code <200> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:67)
+	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:68)
 	at ✽.the passenger with id "13" should have name "Rahul"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:9)
 ]]>
 </failure>
@@ -192,7 +192,7 @@ Then the response status should be "200"....................................pass
 And the passenger with id "13" should have name "Rahul".....................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.6" time="0.553">
+<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.6" time="0.537">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;204&gt;.
 ">
@@ -219,7 +219,7 @@ Expected status code <200> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:67)
+	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:68)
 	at ✽.the passenger with id "14" should have name "Nick"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:9)
 ]]>
 </failure>
@@ -230,7 +230,7 @@ Then the response status should be "200"....................................pass
 And the passenger with id "14" should have name "Nick"......................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.7" time="0.562">
+<testcase classname="Passenger Service API" name="Add a passenger and verify retrieval by id - #1.7" time="0.568">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;204&gt;.
 ">
@@ -257,7 +257,7 @@ Expected status code <200> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:67)
+	at steps.PassengerSteps.passenger_should_have_name(PassengerSteps.java:68)
 	at ✽.the passenger with id "15" should have name "Joe"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:9)
 ]]>
 </failure>
@@ -268,24 +268,52 @@ Then the response status should be "200"....................................pass
 And the passenger with id "15" should have name "Joe".......................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.1: View passenger list and verify contains id &quot;9&quot;" time="0.4">
+<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.1: View passenger list and verify contains id &quot;1&quot;" time="0.404">
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I fetch passenger list.................................................passed
 Then the response status should be "200"....................................passed
-And the list should contain passenger id "9"................................passed
+And the list should contain passenger id "1"................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.2: View passenger list and verify contains id &quot;10&quot;" time="0.417">
+<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.2: View passenger list and verify contains id &quot;2&quot;" time="0.413">
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger list.................................................passed
+Then the response status should be "200"....................................passed
+And the list should contain passenger id "2"................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.3: View passenger list and verify contains id &quot;9&quot;" time="0.418">
 <failure type="java.lang.AssertionError" message="
-Expected: a string containing &quot;10&quot;
-     but: was &quot;[{&quot;passengerId&quot;:1,&quot;passengerName&quot;:&quot;Rakesh&quot;,&quot;passengerMobile&quot;:&quot;1234567890&quot;,&quot;passengerGender&quot;:&quot;Male&quot;,&quot;passengerAadhaarNumber&quot;:&quot;123400001234&quot;,&quot;passengerAddress&quot;:&quot;Chennai&quot;},{&quot;passengerId&quot;:2,&quot;passengerName&quot;:&quot;Priya&quot;,&quot;passengerMobile&quot;:&quot;1245678231&quot;,&quot;passengerGender&quot;:&quot;Female&quot;,&quot;passengerAadhaarNumber&quot;:&quot;231400000000&quot;,&quot;passengerAddress&quot;:&quot;Coimbatore&quot;}]&quot;">
+Expected: a collection containing &lt;9&gt;
+     but: mismatches were: [was &lt;1&gt;, was &lt;2&gt;]">
 <![CDATA[java.lang.AssertionError: 
-Expected: a string containing "10"
-     but: was "[{"passengerId":1,"passengerName":"Rakesh","passengerMobile":"1234567890","passengerGender":"Male","passengerAadhaarNumber":"123400001234","passengerAddress":"Chennai"},{"passengerId":2,"passengerName":"Priya","passengerMobile":"1245678231","passengerGender":"Female","passengerAadhaarNumber":"231400000000","passengerAddress":"Coimbatore"}]"
+Expected: a collection containing <9>
+     but: mismatches were: [was <1>, was <2>]
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at steps.PassengerSteps.list_should_contain_id(PassengerSteps.java:81)
+	at steps.PassengerSteps.list_should_contain_id(PassengerSteps.java:85)
+	at ✽.the list should contain passenger id "9"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:28)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger list.................................................passed
+Then the response status should be "200"....................................passed
+And the list should contain passenger id "9"................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.4: View passenger list and verify contains id &quot;10&quot;" time="0.388">
+<failure type="java.lang.AssertionError" message="
+Expected: a collection containing &lt;10&gt;
+     but: mismatches were: [was &lt;1&gt;, was &lt;2&gt;]">
+<![CDATA[java.lang.AssertionError: 
+Expected: a collection containing <10>
+     but: mismatches were: [was <1>, was <2>]
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at steps.PassengerSteps.list_should_contain_id(PassengerSteps.java:85)
 	at ✽.the list should contain passenger id "10"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:28)
 ]]>
 </failure>
@@ -296,16 +324,16 @@ Then the response status should be "200"....................................pass
 And the list should contain passenger id "10"...............................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.3: View passenger list and verify contains id &quot;11&quot;" time="0.407">
+<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.5: View passenger list and verify contains id &quot;11&quot;" time="0.415">
 <failure type="java.lang.AssertionError" message="
-Expected: a string containing &quot;11&quot;
-     but: was &quot;[{&quot;passengerId&quot;:1,&quot;passengerName&quot;:&quot;Rakesh&quot;,&quot;passengerMobile&quot;:&quot;1234567890&quot;,&quot;passengerGender&quot;:&quot;Male&quot;,&quot;passengerAadhaarNumber&quot;:&quot;123400001234&quot;,&quot;passengerAddress&quot;:&quot;Chennai&quot;},{&quot;passengerId&quot;:2,&quot;passengerName&quot;:&quot;Priya&quot;,&quot;passengerMobile&quot;:&quot;1245678231&quot;,&quot;passengerGender&quot;:&quot;Female&quot;,&quot;passengerAadhaarNumber&quot;:&quot;231400000000&quot;,&quot;passengerAddress&quot;:&quot;Coimbatore&quot;}]&quot;">
+Expected: a collection containing &lt;11&gt;
+     but: mismatches were: [was &lt;1&gt;, was &lt;2&gt;]">
 <![CDATA[java.lang.AssertionError: 
-Expected: a string containing "11"
-     but: was "[{"passengerId":1,"passengerName":"Rakesh","passengerMobile":"1234567890","passengerGender":"Male","passengerAadhaarNumber":"123400001234","passengerAddress":"Chennai"},{"passengerId":2,"passengerName":"Priya","passengerMobile":"1245678231","passengerGender":"Female","passengerAadhaarNumber":"231400000000","passengerAddress":"Coimbatore"}]"
+Expected: a collection containing <11>
+     but: mismatches were: [was <1>, was <2>]
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at steps.PassengerSteps.list_should_contain_id(PassengerSteps.java:81)
+	at steps.PassengerSteps.list_should_contain_id(PassengerSteps.java:85)
 	at ✽.the list should contain passenger id "11"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:28)
 ]]>
 </failure>
@@ -316,24 +344,36 @@ Then the response status should be "200"....................................pass
 And the list should contain passenger id "11"...............................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.4: View passenger list and verify contains id &quot;12&quot;" time="0.424">
+<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.6: View passenger list and verify contains id &quot;12&quot;" time="0.436">
+<failure type="java.lang.AssertionError" message="
+Expected: a collection containing &lt;12&gt;
+     but: mismatches were: [was &lt;1&gt;, was &lt;2&gt;]">
+<![CDATA[java.lang.AssertionError: 
+Expected: a collection containing <12>
+     but: mismatches were: [was <1>, was <2>]
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at steps.PassengerSteps.list_should_contain_id(PassengerSteps.java:85)
+	at ✽.the list should contain passenger id "12"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:28)
+]]>
+</failure>
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I fetch passenger list.................................................passed
 Then the response status should be "200"....................................passed
-And the list should contain passenger id "12"...............................passed
+And the list should contain passenger id "12"...............................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.5: View passenger list and verify contains id &quot;13&quot;" time="0.412">
+<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.7: View passenger list and verify contains id &quot;13&quot;" time="0.467">
 <failure type="java.lang.AssertionError" message="
-Expected: a string containing &quot;13&quot;
-     but: was &quot;[{&quot;passengerId&quot;:1,&quot;passengerName&quot;:&quot;Rakesh&quot;,&quot;passengerMobile&quot;:&quot;1234567890&quot;,&quot;passengerGender&quot;:&quot;Male&quot;,&quot;passengerAadhaarNumber&quot;:&quot;123400001234&quot;,&quot;passengerAddress&quot;:&quot;Chennai&quot;},{&quot;passengerId&quot;:2,&quot;passengerName&quot;:&quot;Priya&quot;,&quot;passengerMobile&quot;:&quot;1245678231&quot;,&quot;passengerGender&quot;:&quot;Female&quot;,&quot;passengerAadhaarNumber&quot;:&quot;231400000000&quot;,&quot;passengerAddress&quot;:&quot;Coimbatore&quot;}]&quot;">
+Expected: a collection containing &lt;13&gt;
+     but: mismatches were: [was &lt;1&gt;, was &lt;2&gt;]">
 <![CDATA[java.lang.AssertionError: 
-Expected: a string containing "13"
-     but: was "[{"passengerId":1,"passengerName":"Rakesh","passengerMobile":"1234567890","passengerGender":"Male","passengerAadhaarNumber":"123400001234","passengerAddress":"Chennai"},{"passengerId":2,"passengerName":"Priya","passengerMobile":"1245678231","passengerGender":"Female","passengerAadhaarNumber":"231400000000","passengerAddress":"Coimbatore"}]"
+Expected: a collection containing <13>
+     but: mismatches were: [was <1>, was <2>]
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at steps.PassengerSteps.list_should_contain_id(PassengerSteps.java:81)
+	at steps.PassengerSteps.list_should_contain_id(PassengerSteps.java:85)
 	at ✽.the list should contain passenger id "13"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:28)
 ]]>
 </failure>
@@ -344,24 +384,36 @@ Then the response status should be "200"....................................pass
 And the list should contain passenger id "13"...............................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.6: View passenger list and verify contains id &quot;14&quot;" time="0.388">
+<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.8: View passenger list and verify contains id &quot;14&quot;" time="0.424">
+<failure type="java.lang.AssertionError" message="
+Expected: a collection containing &lt;14&gt;
+     but: mismatches were: [was &lt;1&gt;, was &lt;2&gt;]">
+<![CDATA[java.lang.AssertionError: 
+Expected: a collection containing <14>
+     but: mismatches were: [was <1>, was <2>]
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at steps.PassengerSteps.list_should_contain_id(PassengerSteps.java:85)
+	at ✽.the list should contain passenger id "14"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:28)
+]]>
+</failure>
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I fetch passenger list.................................................passed
 Then the response status should be "200"....................................passed
-And the list should contain passenger id "14"...............................passed
+And the list should contain passenger id "14"...............................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.7: View passenger list and verify contains id &quot;15&quot;" time="0.43">
+<testcase classname="Passenger Service API" name="View passenger list and verify contains id &quot;&lt;id&gt;&quot; - #1.9: View passenger list and verify contains id &quot;15&quot;" time="0.398">
 <failure type="java.lang.AssertionError" message="
-Expected: a string containing &quot;15&quot;
-     but: was &quot;[{&quot;passengerId&quot;:1,&quot;passengerName&quot;:&quot;Rakesh&quot;,&quot;passengerMobile&quot;:&quot;1234567890&quot;,&quot;passengerGender&quot;:&quot;Male&quot;,&quot;passengerAadhaarNumber&quot;:&quot;123400001234&quot;,&quot;passengerAddress&quot;:&quot;Chennai&quot;},{&quot;passengerId&quot;:2,&quot;passengerName&quot;:&quot;Priya&quot;,&quot;passengerMobile&quot;:&quot;1245678231&quot;,&quot;passengerGender&quot;:&quot;Female&quot;,&quot;passengerAadhaarNumber&quot;:&quot;231400000000&quot;,&quot;passengerAddress&quot;:&quot;Coimbatore&quot;}]&quot;">
+Expected: a collection containing &lt;15&gt;
+     but: mismatches were: [was &lt;1&gt;, was &lt;2&gt;]">
 <![CDATA[java.lang.AssertionError: 
-Expected: a string containing "15"
-     but: was "[{"passengerId":1,"passengerName":"Rakesh","passengerMobile":"1234567890","passengerGender":"Male","passengerAadhaarNumber":"123400001234","passengerAddress":"Chennai"},{"passengerId":2,"passengerName":"Priya","passengerMobile":"1245678231","passengerGender":"Female","passengerAadhaarNumber":"231400000000","passengerAddress":"Coimbatore"}]"
+Expected: a collection containing <15>
+     but: mismatches were: [was <1>, was <2>]
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at steps.PassengerSteps.list_should_contain_id(PassengerSteps.java:81)
+	at steps.PassengerSteps.list_should_contain_id(PassengerSteps.java:85)
 	at ✽.the list should contain passenger id "15"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:28)
 ]]>
 </failure>
@@ -372,21 +424,21 @@ Then the response status should be "200"....................................pass
 And the list should contain passenger id "15"...............................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.1" time="0.413">
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.1" time="0.394">
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I fetch passenger by name "Rakesh" and mobile "1234567890".............passed
 Then the response status should be "200"....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.2" time="0.417">
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.2" time="0.396">
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I fetch passenger by name "Priya" and mobile "1245678231"..............passed
 Then the response status should be "200"....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.3" time="0.403">
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.3" time="0.424">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;204&gt;.
 ">
@@ -413,8 +465,8 @@ Expected status code <200> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
-	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:44)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:47)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:46)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -423,7 +475,7 @@ When I fetch passenger by name "Rakesh" and mobile "1256788572".............pass
 Then the response status should be "200"....................................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.4" time="0.419">
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.4" time="0.399">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;204&gt;.
 ">
@@ -450,8 +502,8 @@ Expected status code <200> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
-	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:44)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:47)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:46)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -460,14 +512,7 @@ When I fetch passenger by name "Priya" and mobile "1267898913"..............pass
 Then the response status should be "200"....................................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.5" time="0.464">
-<system-out><![CDATA[
-Given I have a valid access token...........................................passed
-When I fetch passenger by name "Lee" and mobile "9898765658"................passed
-Then the response status should be "204"....................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.6" time="0.408">
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.5" time="0.405">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
 Expected status code &lt;404&gt; but was &lt;204&gt;.
 ">
@@ -494,8 +539,45 @@ Expected status code <404> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
-	at ✽.the response status should be "404"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:44)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:47)
+	at ✽.the response status should be "404"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:46)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I have a valid access token...........................................passed
+When I fetch passenger by name "Lee" and mobile "9898765658"................passed
+Then the response status should be "404"....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.6" time="0.425">
+<failure type="java.lang.AssertionError" message="1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
+">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <404> but was <204>.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:47)
+	at ✽.the response status should be "404"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:46)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -504,12 +586,12 @@ When I fetch passenger by name "Henry" and mobile "9898765659"..............pass
 Then the response status should be "404"....................................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.7" time="0.399">
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.7" time="0.369">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
-Expected status code &lt;400&gt; but was &lt;204&gt;.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
 ">
 <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <400> but was <204>.
+Expected status code <404> but was <204>.
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -531,22 +613,22 @@ Expected status code <400> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
-	at ✽.the response status should be "400"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:44)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:47)
+	at ✽.the response status should be "404"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:46)
 ]]>
 </failure>
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I fetch passenger by name "Harry" and mobile "9898765660"..............passed
-Then the response status should be "400"....................................failed
+Then the response status should be "404"....................................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.8" time="0.414">
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.8" time="0.382">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
-Expected status code &lt;400&gt; but was &lt;204&gt;.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
 ">
 <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <400> but was <204>.
+Expected status code <404> but was <204>.
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -568,22 +650,22 @@ Expected status code <400> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
-	at ✽.the response status should be "400"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:44)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:47)
+	at ✽.the response status should be "404"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:46)
 ]]>
 </failure>
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I fetch passenger by name "Natasha" and mobile "9898765661"............passed
-Then the response status should be "400"....................................failed
+Then the response status should be "404"....................................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.9" time="0.41">
+<testcase classname="Passenger Service API" name="View passenger by name and mobile - #1.9" time="0.413">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
-Expected status code &lt;400&gt; but was &lt;204&gt;.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
 ">
 <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <400> but was <204>.
+Expected status code <404> but was <204>.
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -605,31 +687,31 @@ Expected status code <400> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
-	at ✽.the response status should be "400"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:44)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:47)
+	at ✽.the response status should be "404"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:46)
 ]]>
 </failure>
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I fetch passenger by name "Angela" and mobile "9898765662".............passed
-Then the response status should be "400"....................................failed
+Then the response status should be "404"....................................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger by id - #1.1" time="0.432">
+<testcase classname="Passenger Service API" name="View passenger by id - #1.1" time="0.415">
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I fetch passenger by id "1"............................................passed
 Then the response status should be "200"....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger by id - #1.2" time="0.419">
+<testcase classname="Passenger Service API" name="View passenger by id - #1.2" time="0.402">
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I fetch passenger by id "2"............................................passed
 Then the response status should be "200"....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger by id - #1.3" time="0.4">
+<testcase classname="Passenger Service API" name="View passenger by id - #1.3" time="0.419">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;204&gt;.
 ">
@@ -656,8 +738,8 @@ Expected status code <200> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
-	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:61)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:47)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:63)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -693,8 +775,8 @@ Expected status code <200> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
-	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:61)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:47)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:63)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -703,7 +785,7 @@ When I fetch passenger by id "10"...........................................pass
 Then the response status should be "200"....................................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger by id - #1.5" time="0.407">
+<testcase classname="Passenger Service API" name="View passenger by id - #1.5" time="0.416">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;204&gt;.
 ">
@@ -730,8 +812,8 @@ Expected status code <200> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
-	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:61)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:47)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:63)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -740,7 +822,7 @@ When I fetch passenger by id "11"...........................................pass
 Then the response status should be "200"....................................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger by id - #1.6" time="0.416">
+<testcase classname="Passenger Service API" name="View passenger by id - #1.6" time="0.385">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;204&gt;.
 ">
@@ -767,8 +849,8 @@ Expected status code <200> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
-	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:61)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:47)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:63)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -777,7 +859,7 @@ When I fetch passenger by id "12"...........................................pass
 Then the response status should be "200"....................................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger by id - #1.7" time="0.419">
+<testcase classname="Passenger Service API" name="View passenger by id - #1.7" time="0.417">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;204&gt;.
 ">
@@ -804,8 +886,8 @@ Expected status code <200> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
-	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:61)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:47)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:63)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -814,7 +896,7 @@ When I fetch passenger by id "13"...........................................pass
 Then the response status should be "200"....................................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger by id - #1.8" time="0.447">
+<testcase classname="Passenger Service API" name="View passenger by id - #1.8" time="0.416">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;204&gt;.
 ">
@@ -841,8 +923,8 @@ Expected status code <200> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
-	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:61)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:47)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:63)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -851,7 +933,7 @@ When I fetch passenger by id "14"...........................................pass
 Then the response status should be "200"....................................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="View passenger by id - #1.9" time="0.383">
+<testcase classname="Passenger Service API" name="View passenger by id - #1.9" time="0.423">
 <failure type="java.lang.AssertionError" message="1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;204&gt;.
 ">
@@ -878,8 +960,8 @@ Expected status code <200> but was <204>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:46)
-	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:61)
+	at steps.PassengerSteps.response_status_should_be(PassengerSteps.java:47)
+	at ✽.the response status should be "200"(file:///C:/Users/rajdeep%20ghosh/git/Sprint4Batch2Group18/src/test/resources/features/passenger.feature:63)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -888,63 +970,63 @@ When I fetch passenger by id "15"...........................................pass
 Then the response status should be "200"....................................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="Delete passenger by id - #1.1" time="0.393">
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.1" time="0.415">
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I delete passenger with id "1".........................................passed
 Then the response status should be "200"....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="Delete passenger by id - #1.2" time="0.403">
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.2" time="0.386">
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
-When I delete passenger with id "12"........................................passed
+When I delete passenger with id "2".........................................passed
 Then the response status should be "200"....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="Delete passenger by id - #1.3" time="0.407">
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.3" time="0.415">
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I delete passenger with id "9".........................................passed
 Then the response status should be "200"....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="Delete passenger by id - #1.4" time="0.411">
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.4" time="0.417">
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I delete passenger with id "10"........................................passed
 Then the response status should be "200"....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="Delete passenger by id - #1.5" time="0.421">
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.5" time="0.412">
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I delete passenger with id "11"........................................passed
 Then the response status should be "200"....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="Delete passenger by id - #1.6" time="0.441">
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.6" time="0.404">
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I delete passenger with id "12"........................................passed
 Then the response status should be "200"....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="Delete passenger by id - #1.7" time="0.405">
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.7" time="0.416">
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I delete passenger with id "13"........................................passed
 Then the response status should be "200"....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="Delete passenger by id - #1.8" time="0.407">
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.8" time="0.406">
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I delete passenger with id "14"........................................passed
 Then the response status should be "200"....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Passenger Service API" name="Delete passenger by id - #1.9" time="0.392">
+<testcase classname="Passenger Service API" name="Delete passenger by id - #1.9" time="0.429">
 <system-out><![CDATA[
 Given I have a valid access token...........................................passed
 When I delete passenger with id "15"........................................passed
